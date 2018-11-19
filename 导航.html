@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<style type="text/css">
+			.top{
+				/* 设置宽度高度背景颜色 */
+				height: 50px;
+				width: 100%;
+				background: rgb(189,181,181);
+				 position: fixed;/*固定在顶部 */
+				  top: 0;/* 离顶部距离为0 */
+			}
+			.top ul{
+				/* 清楚ul标签默认样式 */
+				width: 80%;
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+			}
+			.top li{
+				float: left;/* 使li内容横向浮动,即横向排列 */
+				margin-right: 50px;/* li之间的距离 */
+			}
+			.top li a{
+				/* 设置链接内容格式 */
+				display: block;
+				color: #fff;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;/* 去除下划线 */
+			}
+			.top li a:hover{
+				/* 鼠标选中变为黑框 */
+				background-color: #111;
+			}
+			 .top ul li ul{
+            /* 设置二级菜单 */
+            width: auto;
+            background:rgb(189, 181, 181);
+            position: absolute;
+            display: none; /* 默认隐藏二级菜单的内容 */
+			}
+			.top ul li ul li{
+				/* 二级菜单li显示的内容 */
+				margin-right: 0;
+				float: none;
+				text-align: center;
+				}
+				.top ul li:hover ul{
+					/* 鼠标选中二级菜单时 */
+					display: block;
+				}
+		</style>
+		<title></title>
+	</head>
+	<body>
+	<div class="top">
+		<center>
+			<ul>
+				<li><a href="导航.html">首页</a></li>
+				<li>
+					<a href="#">html</a>
+				 <ul>
+					<li><a href="head.html#head">head</a></li>
+					<li><a href="body.html#body">body</a></li>
+				 </ul>
+				</li>
+				<li><a href="#">css</a></li>
+				<li><a href="#">javascripe</a></li>
+			</ul>
+		</center>
+		
+	</div>	
+	
+	
+	
+	</body>
+</html>

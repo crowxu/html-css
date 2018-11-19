@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<style type="text/css">
+	p{
+		letter-spacing: 2px;word-spacing: 2px;
+		}	
+		
+	#head{
+		  color: #555;
+		  line-height: 1.75;
+		  padding: 4em 1em;
+		  margin: 0 auto;
+		  max-width: 50em;
+		  font-family: Arial;微软雅黑;
+		}
+		.top{
+			/* 设置宽度高度背景颜色 */
+			height: 50px;
+			width: 100%;
+			background: rgb(189,181,181);
+			position: fixed;/*固定在顶部 */
+			top: 0;/* 离顶部距离为0 */
+		}
+		.top ul{
+			/* 清楚ul标签默认样式 */
+			width: 80%;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+		}
+		.top li{
+			float: left;/* 使li内容横向浮动,即横向排列 */
+			margin-right: 50px;/* li之间的距离 */
+		}
+		.top li a{
+			/* 设置链接内容格式 */
+			display: block;
+			color: #fff;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;/* 去除下划线 */
+		}
+		.top li a:hover{
+			/* 鼠标选中变为黑框 */
+			background-color: #111;
+		}
+		.top ul li ul{
+		/* 设置二级菜单 */
+		width: auto;
+		background:rgb(189, 181, 181);
+		position: absolute;
+		display: none; /* 默认隐藏二级菜单的内容 */
+		}
+		.top ul li ul li{
+			/* 二级菜单li显示的内容 */
+			margin-right: 0;
+			float: none;
+			text-align: center;
+			}
+			.top ul li:hover ul{
+				/* 鼠标选中二级菜单时 */
+				display: block;
+			}
+	</style>
+		<meta charset="utf-8">
+		<title>个人自用</title>
+	</head>
+	
+	<body>
+		<div class="top">
+			<center>
+				<ul>
+					<li><a href="导航.html">首页</a></li>
+					<li>
+						<a href="#">html</a>
+					<ul>
+						<li><a href="head.html#head">head</a></li>
+						<li><a href="body.html#body">body</a></li>
+					</ul>
+					</li>
+					<li><a href="#">css</a></li>
+					<li><a href="#">javascripe</a></li>
+				</ul>
+			</center>
+			
+		</div>	
+	
+	
+	<div id="head">
+	<h2>head标签用途说明</h2>	
+	<p class="spread">1.&lt;meta charset="utf-8"&gt;:meta标签用于描述页面信息,charset="utf-8"提示浏览器使用万国码翻译html内容<br /></p>
+	
+	<p>2.表示body标签内的格式按上下间距为0;自动对齐,最大宽度为50em排列: 
+	<sub>
+		<em>一个em等于任何字体中的字母所需要的垂直空间
+		</em>
+	</sub>
+	<blockquote>
+	body {
+	   margin: 0 auto;quote>
+	   max-width: 50em;
+	     }
+	    </blockquote>
+	</p>	
+	
+	<p>3.p标签内字符间距为2px.
+	<blockquote>
+	p.spread{letter-spacing: 2px;}
+	</blockquote>
+	</p>	
+	</div>
+
+	</body>
+</html>
